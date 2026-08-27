@@ -1,0 +1,189 @@
+\documentclass[11pt, letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\geometry{top=2.5cm, bottom=2.5cm, left=2.5cm, right=2.5cm}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{enumitem}
+
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codelightgray}{rgb}{0.95,0.95,0.95}
+
+\lstset{
+    backgroundcolor=\color{codelightgray},
+    commentstyle=\color{codegray},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{purple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+
+\title{\textbf{Tarea 2: Análisis de partículas mediante estructuras dinámicas}}
+\author{}
+\date{}
+
+\begin{document}
+
+\begin{center}
+    \Large \textbf{Tarea 2}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Profesores}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Ricardo Salas Letelier (ricardo.salas@usm.cl)
+    \item Wladimir Ormazabal (wladimir.ormazabal@usm.cl)
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent
+\textbf{Ayudantes}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item Matías Gómez (mgomez@usm.cl)
+\end{itemize}
+
+\vspace{0.3cm}
+\noindent
+\textbf{Fecha de entrega:} 25 de septiembre del 2026
+
+\section{Reglas}
+La presente tarea debe hacerse de forma \textbf{individual}. No se permiten de ninguna manera trabajos en grupo.
+
+Debe usarse el lenguaje de programación C++. Al evaluarla, la tarea será compilada usando el compilador \texttt{g++}, con la línea de comando \texttt{g++ archivo.cpp -o output -Wall}. Alternativamente, se aceptan variantes como MinGW.
+
+Todas las estructuras de datos solicitadas deben ser implementadas completamente por cada estudiante. \textbf{No se permite usar la biblioteca stl}, así como ninguno de los containers y algoritmos definidos en ella. Está permitido usar bibliotecas estándar como \texttt{math.h}, \texttt{string}, \texttt{fstream}, \texttt{iostream}.
+
+\section{Objetivos}
+Entender y familiarizarse con la implementación y uso de estructuras de datos de tipo listas y árboles. Además, se fomentará el uso de buenas prácticas y el orden en la programación.
+
+\section{Problemas a Resolver}
+Entregue un archivo \texttt{.cpp} con una función \texttt{main} adecuada que permita probar su programa.
+
+\subsection{Análisis de partículas mediante estructuras dinámicas}
+En un experimento de física de partículas se registran distintos eventos en un detector. Dada la cantidad de información generada, se desea almacenar y consultar estos datos utilizando un Árbol Binario de Búsqueda (ABB) para almacenar registros y una lista enlazada para las partículas que cumplan ciertas condiciones.
+
+Cada partícula estará caracterizada por:
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{ID:} identificador único (string).
+    \item \textbf{Energía:} (float).
+    \item \textbf{Masa:} (float).
+\end{itemize}
+El ABB deberá estar ordenado de acuerdo con la energía de las partículas (se garantiza que no habrá dos partículas con la misma energía).
+
+\subsubsection*{Formato de entrada}
+Se entregará un archivo \texttt{Particulas.txt}. La primera línea contendrá un entero $N$ (cantidad de partículas). A continuación, se tendrán $N$ líneas con la información en el formato: \texttt{ID ENERGIA MASA}. Su programa deberá ser capaz de abrir este archivo y leer los datos para poblar las estructuras.
+
+\textbf{Formato Particula.txt}
+
+\begin{lstlisting}[language=bash]
+8
+P001 12.5 0.511
+P002 7.8 1.20
+P003 18.4 2.35
+P004 4.2 0.105
+P005 15.7 0.938
+P006 22.1 4.18
+P007 9.6 0.139
+P008 13.3 0.494
+\end{lstlisting}
+
+\subsection{Construcción del Árbol Binario de Búsqueda}
+Los registros deberán almacenarse en un ABB, utilizando la energía como criterio de orden. Implemente:
+\begin{lstlisting}[language=C++]
+void insertar(string id, float energia, float masa);
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Entrada:} El ID de la partícula, su energía y su masa (leídos del archivo txt).
+    
+    \item \textbf{Resultado:} Modifica la estructura interna del árbol añadiendo un nuevo nodo.
+\end{itemize}
+
+Además, se deberá implementar un recorrido del árbol que permita visualizar la información almacenada en él. Implemente la función:
+\begin{lstlisting}[language=C++]
+void preOrden();
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Resultado:} Imprime en consola un recorrido en \textbf{pre-orden} (raíz, izquierda, derecha) con la información completa de cada nodo, respetando el formato del archivo original.
+\end{itemize}
+\textbf{Ejemplo de salida esperada:}
+\begin{lstlisting}[language=bash]
+P001 12.5 0.511
+P002 7.8 1.2
+...
+\end{lstlisting}
+
+\subsection{Selección y construcción de la lista enlazada}
+Para motivos del experimento, el usuario deberá definir dinámicamente un valor $U$ (umbral de energía). Se recorrerá el ABB seleccionando partículas con $\text{energía} \ge U$, incorporándolas a una lista enlazada con nodos independientes. Implemente:
+\begin{lstlisting}[language=C++]
+void insertarAlFinal(string id, float energia, float masa);
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Entrada:} El ID, energía y masa de la partícula extraída del árbol.
+    \item \textbf{Resultado:} Crea un nuevo nodo independiente y lo enlaza al final de la lista.
+\end{itemize}
+
+Una vez construida la lista, se deberá recorrer de manera secuencial e imprimir su contenido desde el inicio hasta el final. Implemente la función:
+\begin{lstlisting}[language=C++]
+void imprimirLista();
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Resultado:} Imprime en consola \textbf{únicamente el ID} de las partículas separadas por flechas.
+\end{itemize}
+\textbf{Ejemplo de salida esperada:}
+\begin{lstlisting}[language=bash]
+P006 -> P003 -> P005 -> NULL
+\end{lstlisting}
+
+\subsection{Eliminación de partículas de la lista}
+Permita eliminar una partícula por ID (por ejemplo, para descartar lecturas ruidosas). Implemente:
+\begin{lstlisting}[language=C++]
+void eliminar(string idEliminar);
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Entrada:} El identificador único de la partícula a descartar (ej. \texttt{"P001"}).
+    \item \textbf{Resultado:} Modifica la estructura de la lista liberando la memoria del nodo. Debe considerar los casos: inicio, medio, final, lista vacía y elemento no encontrado.
+\end{itemize}
+
+\subsection{Inversión Magnética de Partículas}
+Durante el análisis de las partículas seleccionadas en la lista, el detector fue expuesto accidentalmente a un campo magnético inverso severo[cite: 3]. Como consecuencia, el orden cronológico de las partículas en la lista enlazada quedó exactamente opuesto[cite: 3]. Implemente la función:
+\begin{lstlisting}[language=C++]
+void InvertirLista();
+\end{lstlisting}
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item \textbf{Resultado:} Reasigna los punteros internos de los nodos para que el orden de la lista se invierta físicamente.
+\end{itemize}
+
+
+\textbf{Ejemplo de funcionamiento:}
+Si la lista original era:
+\begin{lstlisting}[language=bash]
+P006 -> P003 -> P005 -> NULL
+\end{lstlisting}
+
+Después de llamar a esta función, una llamada a \texttt{imprimirLista()} deberá mostrar:
+\begin{lstlisting}[language=bash]
+P005 -> P003 -> P006 -> NULL
+\end{lstlisting}
+
+\section{Entrega de la Tarea}
+Entregar archivo comprimido a aula.usm a más tardar el 25 de septiembre de 2026 a las 23:59:00.
+
+\section{Restricciones y consideraciones}
+Por cada día de atraso se descontarán 10 puntos en la nota. Las tareas que no compilen serán calificadas con nota 0. Por cada Warning, -5 puntos. Si se detecta COPIA la nota automáticamente será 0.
+
+\end{document}
