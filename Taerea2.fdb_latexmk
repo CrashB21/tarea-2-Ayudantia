@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1787797211.227 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" "Taerea2.pdf" "Taerea2" 1787797211.72421 0
+["pdflatex"] 1787881109.97107 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" "Taerea2.pdf" "Taerea2" 1787881110.47448 0
   "/etc/texmf/web2c/texmf.cnf" 1775618546.14463 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" 1787797145.99089 7985 2260c6420cb7e9c73abc2ed4c130e9cb ""
+  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" 1787881109.27721 11456 8abc7960e763baeab5d23b55620d0498 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -13,6 +13,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1136768653 1520 eccf95517727cb11801f4f1aee3a21b4 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm" 1136768653 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr12.tfm" 1136768653 1288 655e228510b4c2a1abe905c368440826 ""
+  "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr17.tfm" 1136768653 1292 296a67155bdbfc32aa9c636f21e91433 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm" 1136768653 1300 b62933e007d01cfd073f79b963c01526 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr8.tfm" 1136768653 1292 21c1c5bfeaebccffdb478fd231a0997d ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm" 1136768653 1292 6b21b9c2c7bebb38aa2273f7ca0fb3af ""
@@ -24,6 +25,7 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
@@ -88,12 +90,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775618569.26844 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775618630 8212777 2edec43fb90d42db8bf8ca8984e32bdf ""
-  "Taerea2.aux" 1787797211.68153 1652 e8c1bdde26b8f41e7c9f84fa09354d78 "pdflatex"
-  "Taerea2.out" 1787797211.68253 2108 c0dd8504c552d424883ce09d4ec59c67 "pdflatex"
-  "Taerea2.tex" 1787797145.99089 7985 2260c6420cb7e9c73abc2ed4c130e9cb ""
+  "Taerea2.aux" 1787881110.42819 1770 db2de09973bc01a828b6eedf5a40984f "pdflatex"
+  "Taerea2.out" 1787881110.42823 2255 a8049ea75f598f859b2d647fa106e6f0 "pdflatex"
+  "Taerea2.tex" 1787881109.27721 11456 8abc7960e763baeab5d23b55620d0498 ""
+  "Taerea2.toc" 1787881110.42973 1025 761f3b7f295e31d8af5c5b5468fdd2c3 "pdflatex"
   (generated)
   "Taerea2.aux"
   "Taerea2.log"
   "Taerea2.out"
   "Taerea2.pdf"
+  "Taerea2.toc"
   (rewritten before read)
