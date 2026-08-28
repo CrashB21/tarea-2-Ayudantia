@@ -38,6 +38,7 @@
 \begin{document}
 
 \begin{center}
+    \vspace*{\fill}
     \LARGE \textbf{INF-73625 Programación Avanzada para Ciencias}\\
     \Large \textbf{Tarea 2: Análisis de partículas mediante estructuras dinámicas}
 \end{center}
@@ -61,6 +62,11 @@
 \vspace{0.3cm}
 \noindent
 \textbf{Fecha de entrega:} 25 de septiembre del 2026
+\vspace*{\fill}
+
+
+\tableofcontents
+\newpage
 
 \section{Reglas}
 La presente tarea debe hacerse de forma \textbf{individual}. No se permiten de ninguna manera trabajos en grupo.
@@ -182,13 +188,12 @@ P005 -> P003 -> P006 -> NULL
 \end{lstlisting}
 
 \section{Entrega de la Tarea}
-Entregue la tarea enviando un archivo comprimido tarea1-nombre-apellido.zip (reemplazando por 
+Entregue la tarea enviando un archivo comprimido tarea2-nombre-apellido.zip (reemplazando por 
 nombre y apellido según corresponda) a la página aula.usm.cl del curso, a más tardar el día 28 de 
-septiembre 2026, a las 23:59 (Chile Continental), el cual contenga:
+septiembre 2026, a las 23:59 (Chile Continental), el cual contenga: \\
 \begin{itemize}[noitemsep, topsep=0pt]
     \item Los archivos con los códigos fuentes necesarios para el funcionamiento de la tarea. ¡Los 
 archivos deben compilar!
-
     
     \item \textbf{README.txt:} Instrucciones de compilación en caso de ser necesarias, y la forma de 
 compilación que usó (debe ser alguna de las indicadas en los tutoriales entregados en 
@@ -197,6 +202,34 @@ Aula).
 
 
 \section{Restricciones y consideraciones}
-Por cada día de atraso se descontarán 10 puntos en la nota. Las tareas que no compilen serán calificadas con nota 0. Por cada Warning, -5 puntos. Si se detecta COPIA la nota automáticamente será 0.
+\begin{itemize}[noitemsep, topsep=0pt]
+    \item -10 pts por cada día o fracción de
+retraso\\
+    \item Por cada Warning, -5 puntos.  \\
+    \item Las tareas que no compilen serán calificadas con nota 0. \\
+    \item Si se detecta COPIA la nota automáticamente será 0.\\
+    \item Toda memoria reservada dinámicamente con \texttt{new} debe ser liberada con \texttt{delete} o \texttt{delete[]} antes de finalizar el programa.\\
+    \item La falta de orden será penalizada
+\end{itemize}
+
+\section{Documentación}
+El código fuente del programa \textbf{debe} estar estructurado adecuadamente en archivos (separados de
+ser necesario). Si el código fuente está desordenado, se descontarán puntos de la nota.\\
+Las funciones \textbf{deben} estar comentadas con el siguiente formato:
+\begin{lstlisting}[language=C++]
+/*****
+* TipoFuncion NombreFuncion
+******
+* Resumen Funcion
+******
+* Input:
+* tipoParametro NombreParametro : Descripcion Parametro
+* .......
+******
+* Returns:
+* TipoRetorno, Descripcion retorno
+*****/
+\end{lstlisting}
+
 
 \end{document}
