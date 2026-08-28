@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1787882151.1809 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" "Taerea2.pdf" "Taerea2" 1787882151.7446 0
+["pdflatex"] 1787884664.97915 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Tarea2.tex" "Tarea2.pdf" "Tarea2" 1787884665.50242 0
   "/etc/texmf/web2c/texmf.cnf" 1775618546.14463 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" 1787882150.98191 11458 8f19a4c2d37e3c526e2a1c344fbc1179 ""
+  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Tarea2.tex" 1787884664.29147 11287 d690260b91efc0f9269406de08126144 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -90,14 +90,14 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775618569.26844 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775618630 8212777 2edec43fb90d42db8bf8ca8984e32bdf ""
-  "Taerea2.aux" 1787882151.69992 1770 db2de09973bc01a828b6eedf5a40984f "pdflatex"
-  "Taerea2.out" 1787882151.70092 2255 a8049ea75f598f859b2d647fa106e6f0 "pdflatex"
-  "Taerea2.tex" 1787882150.98191 11458 8f19a4c2d37e3c526e2a1c344fbc1179 ""
-  "Taerea2.toc" 1787882151.70198 1025 761f3b7f295e31d8af5c5b5468fdd2c3 "pdflatex"
+  "Tarea2.aux" 1787884665.45647 1907 f6389fe20d62b8cbf16a75c813421d09 "pdflatex"
+  "Tarea2.out" 1787884665.45747 2470 e7e86cbd7697d7070f92768e8889ffa4 "pdflatex"
+  "Tarea2.tex" 1787884664.29147 11287 d690260b91efc0f9269406de08126144 ""
+  "Tarea2.toc" 1787884665.45886 1121 b593beb029ed3f89a93d2bcd2de01932 "pdflatex"
   (generated)
-  "Taerea2.aux"
-  "Taerea2.log"
-  "Taerea2.out"
-  "Taerea2.pdf"
-  "Taerea2.toc"
+  "Tarea2.aux"
+  "Tarea2.log"
+  "Tarea2.out"
+  "Tarea2.pdf"
+  "Tarea2.toc"
   (rewritten before read)

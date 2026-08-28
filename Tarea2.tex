@@ -168,7 +168,7 @@ Tras aplicar los campos magnéticos, los físicos notaron que si dos partículas
 
 Implemente la función:
 \begin{lstlisting}[language=C++]
-void EliminarInestabilidad(float eMax);
+void purgarInestabilidad(float eMax);
 \end{lstlisting}
 \begin{itemize}[noitemsep, topsep=0pt]
     \item \textbf{Entrada:} El límite de energía máxima permitida entre dos nodos adyacentes (\texttt{eMax}).
@@ -181,11 +181,6 @@ Suponga que se define un umbral de inestabilidad \texttt{eMax = 30.0} y la lista
 P006(E: 22.1) -> P003(E: 18.4) -> P005(E: 15.7) -> NULL
 \end{lstlisting}
 
-Evaluación algorítmica:
-\begin{itemize}[noitemsep, topsep=0pt]
-    \item Se evalúa el par \texttt{P006} y \texttt{P003}: $22.1 + 18.4 = 40.5$. Supera el límite de 30.0. Como \texttt{P006} tiene mayor energía (22.1 > 18.4), colapsa y es eliminado. La nueva cabeza pasa a ser \texttt{P003}.
-    \item Se evalúa el nuevo par adyacente \texttt{P003} y \texttt{P005}: $18.4 + 15.7 = 34.1$. Supera el límite de 30.0. Como \texttt{P003} tiene mayor energía (18.4 > 15.7), colapsa y es eliminado.
-\end{itemize}
 
 Tras invocar \texttt{purgarInestabilidad(30.0)}, una llamada a \texttt{imprimirLista()} mostrará:
 \begin{lstlisting}[language=bash]
@@ -212,9 +207,26 @@ Después de llamar a esta función, una llamada a \texttt{imprimirLista()} deber
 P005 -> P003 -> P006 -> NULL
 \end{lstlisting}
 
+\subsection{Ejemplo completo de ejecución}
+\begin{lstlisting}[language=bash]
+P001 12.5 0.511
+P002 7.8 1.2
+P004 4.2 0.105
+P007 9.6 0.139
+P003 18.4 2.35
+P005 15.7 0.938
+P008 13.3 0.494
+P006 22.1 4.18
+12
+P001 -> P008 -> P005 -> P003 -> P006 -> NULL
+35
+P001 -> P008 -> P005 -> P003 -> NULL
+P003 -> P005 -> P008 -> P001 -> NULL
+\end{lstlisting}
+
 \section{Entrega de la Tarea}
 Entregue la tarea enviando un archivo comprimido tarea2-nombre-apellido.zip (reemplazando por 
-nombre y apellido según corresponda) a la página aula.usm.cl del curso, a más tardar el día 28 de 
+nombre y apellido según corresponda) a la página aula.usm.cl del curso, a más tardar el día 25 de 
 septiembre 2026, a las 23:59 (Chile Continental), el cual contenga: \\
 \begin{itemize}[noitemsep, topsep=0pt]
     \item Los archivos con los códigos fuentes necesarios para el funcionamiento de la tarea. ¡Los 
