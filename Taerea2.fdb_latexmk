@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1787881109.97107 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" "Taerea2.pdf" "Taerea2" 1787881110.47448 0
+["pdflatex"] 1787882151.1809 "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" "Taerea2.pdf" "Taerea2" 1787882151.7446 0
   "/etc/texmf/web2c/texmf.cnf" 1775618546.14463 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" 1787881109.27721 11456 8abc7960e763baeab5d23b55620d0498 ""
+  "/home/crash/Escritorio/Ayudantia CS. AVANZADA/Latex/Taerea2.tex" 1787882150.98191 11458 8f19a4c2d37e3c526e2a1c344fbc1179 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -90,10 +90,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1707919699 40399 f2c302f7d2af602abb742093540a5834 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1775618569.26844 5472669 54eaf61a88b6b7896ebd0dac973cb29c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1775618630 8212777 2edec43fb90d42db8bf8ca8984e32bdf ""
-  "Taerea2.aux" 1787881110.42819 1770 db2de09973bc01a828b6eedf5a40984f "pdflatex"
-  "Taerea2.out" 1787881110.42823 2255 a8049ea75f598f859b2d647fa106e6f0 "pdflatex"
-  "Taerea2.tex" 1787881109.27721 11456 8abc7960e763baeab5d23b55620d0498 ""
-  "Taerea2.toc" 1787881110.42973 1025 761f3b7f295e31d8af5c5b5468fdd2c3 "pdflatex"
+  "Taerea2.aux" 1787882151.69992 1770 db2de09973bc01a828b6eedf5a40984f "pdflatex"
+  "Taerea2.out" 1787882151.70092 2255 a8049ea75f598f859b2d647fa106e6f0 "pdflatex"
+  "Taerea2.tex" 1787882150.98191 11458 8f19a4c2d37e3c526e2a1c344fbc1179 ""
+  "Taerea2.toc" 1787882151.70198 1025 761f3b7f295e31d8af5c5b5468fdd2c3 "pdflatex"
   (generated)
   "Taerea2.aux"
   "Taerea2.log"
